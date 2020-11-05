@@ -1,0 +1,59 @@
+{
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "react-native-gesture-handler": "~1.7.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-unimodules": "~0.11.0",
+    "react-native-web": "~0.13.12",
+    "react-lifecycles-compat": "^3.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "babel-jest": "~25.2.6",
+    "jest": "~25.2.6",
+    "react-test-renderer": "~16.13.1",
+    "@types/react": "~16.9.35",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.63.2",
+    "typescript": "~3.9.5"
+  },
+  "private": false,
+  "name": "validate-form-in-expo-style",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "react": ">=16.9.55",
+    "react-native": ">=0.63.30"
+  },
+  "description": "This is a simple React-Native form InputBox with three main feature: 1- Floating Label, 2- Form Validation with custom error message, 3- Left - Right icon in InputBox",
+  "keywords": [
+    "react",
+    "react-native",
+    "form-validation",
+    "form",
+    "input-validation",
+    "expo-form-validation",
+    "form-validation-package",
+    "form-validation-react-native",
+    "floating-label-react-native",
+    "flating-label-with-form-validation"
+  ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radhakishan404/validate-form-in-expo-style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/radhakishan404/validate-form-in-expo-style/issues"
+  },
+  "homepage": "https://github.com/radhakishan404/validate-form-in-expo-style#readme",
+  "author": "Radhakishan jangid <radhakishanjangid404@gmail.com> (https://radhakishan.vpran.in)",
+  "license": "MIT"
+}
