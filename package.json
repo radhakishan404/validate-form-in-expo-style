@@ -27,7 +27,7 @@
   },
   "private": false,
   "name": "validate-form-in-expo-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "react": ">=16.9.55",
     "react-native": ">=0.63.30"
@@ -45,7 +45,9 @@
     "floating-label-react-native",
     "flating-label-with-form-validation"
   ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/radhakishan404/validate-form-in-expo-style.git"
