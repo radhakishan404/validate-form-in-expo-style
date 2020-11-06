@@ -14,11 +14,15 @@ My bad, that I don't have Mac or IPhone, so this library is tested only in andro
 
 ***📋 Table of Contents***
 --
-- [Install](#install)
-- [Supported Types](#Supoorted_types)
-- [Default Validation Rules](#Default_Validation_Rules_are)
-- [Usage](#usage)
-- [License](#license)
+- [Install](#_Install_26)
+- [Supported Types](#_Supoorted_types_48)
+- [Default Validation Rules](#_Default_Validation_Rules_are_52)
+- [Example](#_See_the_full_example_of_form_validation_in_reactnative_Expo_77)
+- [How to use](#_How_to_use_81)
+- [Props](#_Props_310)
+- [Methods](#license)
+- [Contributing](#_Contributing_356)
+- [License](#_License_361)
 
 ***📥 Install***
 --
