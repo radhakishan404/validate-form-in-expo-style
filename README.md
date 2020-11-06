@@ -46,7 +46,7 @@ If you are not using Expo, run the following:
 yarn add react-native-reanimated react-native-gesture-handler react-lifecycles-compat
 ```
 
-***✔️ Supoorted types:-***
+***✔️ Supported types:-***
 ----------
   - TextInput
  
