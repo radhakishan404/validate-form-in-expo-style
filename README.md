@@ -14,9 +14,9 @@ My bad, that I don't have Mac or IPhone, so this library is tested only in andro
 
 ***📋 Table of Contents***
 --
-- [Install](#_Install_22)
-- [Supported Types](#_Supoorted_types_26)
-- [Default Validation Rules](#_Default_Validation_Rules_are_30)
+- [Install](#install)
+- [Supported Types](#Supoorted_types)
+- [Default Validation Rules](#Default_Validation_Rules_are)
 - [Usage](#usage)
 - [License](#license)
 
