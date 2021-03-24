@@ -7,12 +7,14 @@ class FloatingLabelInput extends React.Component {
     state = {
         isFocused: true,
         animatedValue: new Animated.Value(0),
-        secureTextEntry: false
+        secureTextEntry: false,
+        floatingTopValue: 18,
+        floatingFontSize: 20
     };
 
     componentDidMount() {
         const { animatedValue } = this.state;
-        this.setState({ secureTextEntry: this.props.secureTextEntry })
+        this.setState({ secureTextEntry: this.props.secureTextEntry, floatingTopValue: this.props.floatingTopValue, floatingFontSize: this.props.floatingFontSize })
         this.props.value !== '' ? Animated.timing(animatedValue, {
             duration: 280,
             toValue: 1,
@@ -50,11 +52,11 @@ class FloatingLabelInput extends React.Component {
             color: "#fff",
             top: animatedValue.interpolate({
                 inputRange: [0, 1],
-                outputRange: [18, -8],
+                outputRange: [this.state.floatingTopValue, -8],
             }),
             fontSize: animatedValue.interpolate({
                 inputRange: [0, 1],
-                outputRange: [20, 14],
+                outputRange: [this.state.floatingFontSize, 14],
             }),
             color: animatedValue.interpolate({
                 inputRange: [0, 1],
@@ -62,11 +64,11 @@ class FloatingLabelInput extends React.Component {
             }),
         };
         return (
-            <View style={[styles.action]}>
+            <View style={[styles.action, this.props.containerStyle]}>
                 {
                     this.props.leftIcon
                 }
-                <Animated.Text style={[labelStyle, this.props.labelStyle, this.props.leftIcon ? { left: 25 } : { left: 10 }, { textTransform: "capitalize", fontWeight: "bold" }]}>
+                <Animated.Text style={[labelStyle, this.props.leftIcon ? { left: 25 } : { left: 10 }, { textTransform: "capitalize", fontWeight: "bold" }, this.props.labelStyle]}>
                     {label}
                 </Animated.Text>
                 <TextInput
@@ -74,7 +76,7 @@ class FloatingLabelInput extends React.Component {
                     onFocus={this.handleFocus}
                     onBlur={this.handleBlur}
                     blurOnSubmit
-                    style={[this.props.style, styles.textInput]}
+                    style={[styles.textInput, this.props.style]}
                     secureTextEntry={this.state.secureTextEntry}
                 />
                 {
