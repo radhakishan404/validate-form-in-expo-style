@@ -9,12 +9,20 @@ class FloatingLabelInput extends React.Component {
         animatedValue: new Animated.Value(0),
         secureTextEntry: false,
         floatingTopValue: 18,
-        floatingFontSize: 20
+        floatingFontSize: 20,
+        afterFloatTopValue: -4
     };
 
     componentDidMount() {
         const { animatedValue } = this.state;
-        this.setState({ secureTextEntry: this.props.secureTextEntry, floatingTopValue: this.props.floatingTopValue, floatingFontSize: this.props.floatingFontSize })
+        if (this.props.secureTextEntry)
+            this.setState({ secureTextEntry: this.props.secureTextEntry });
+        if (this.props.floatingTopValue)
+            this.setState({ floatingTopValue: this.props.floatingTopValue });
+        if (this.props.afterFloatTopValue)
+            this.setState({ afterFloatTopValue: this.props.afterFloatTopValue });
+        if (this.props.floatingFontSize)
+            this.setState({ floatingFontSize: this.props.floatingFontSize });
         this.props.value !== '' ? Animated.timing(animatedValue, {
             duration: 280,
             toValue: 1,
@@ -52,7 +60,7 @@ class FloatingLabelInput extends React.Component {
             color: "#fff",
             top: animatedValue.interpolate({
                 inputRange: [0, 1],
-                outputRange: [this.state.floatingTopValue, -8],
+                outputRange: [this.state.floatingTopValue, this.state.afterFloatTopValue],
             }),
             fontSize: animatedValue.interpolate({
                 inputRange: [0, 1],
@@ -90,19 +98,12 @@ class FloatingLabelInput extends React.Component {
                         this.props.invalidIcon
                         : this.props.secureTextEntry ? <TouchableOpacity
                             onPress={() => this.showHidePassword()}
+                            style={{ alignSelf: "center" }}
                         >
                             {this.state.secureTextEntry ?
-                                <Feather
-                                    name="eye-off"
-                                    color="grey"
-                                    size={20}
-                                />
+                                this.props.passwordHideIcon
                                 :
-                                <Feather
-                                    name="eye"
-                                    color="grey"
-                                    size={20}
-                                />
+                                this.props.passwordShowIcon
                             }
                         </TouchableOpacity>
                             : null
