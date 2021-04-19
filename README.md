@@ -177,6 +177,11 @@ class App extends React.Component {
                                     size={20}
                                 />}
                                 validIcon={<Feather name="check-circle" color="green" size={20} />}
+                                labelStyle={styles.labelStyle}
+                                style={[styles.inputStyle]}
+                                containerStyle={styles.inputContainerStyle}
+                                floatingTopValue={hp('1%')}
+                                floatingFontSize={hp('0.5%')}
                             />
                             <InputText
                                 name="last_name"
@@ -193,6 +198,11 @@ class App extends React.Component {
                                     size={20}
                                 />}
                                 validIcon={<Feather name="check-circle" color="green" size={20} />}
+                                labelStyle={styles.labelStyle}
+                                style={[styles.inputStyle]}
+                                containerStyle={styles.inputContainerStyle}
+                                floatingTopValue={hp('1%')}
+                                floatingFontSize={hp('0.5%')}
                             />
                             <InputText
                                 name="phone"
@@ -210,6 +220,11 @@ class App extends React.Component {
                                     size={20}
                                 />}
                                 validIcon={<Feather name="check-circle" color="green" size={20} />}
+                                labelStyle={styles.labelStyle}
+                                style={[styles.inputStyle]}
+                                containerStyle={styles.inputContainerStyle}
+                                floatingTopValue={hp('1%')}
+                                floatingFontSize={hp('0.5%')}
                             />
                             <InputText
                                 name="email"
@@ -228,11 +243,26 @@ class App extends React.Component {
                                     size={20}
                                 />}
                                 validIcon={<Feather name="check-circle" color="green" size={20} />}
+                                labelStyle={styles.labelStyle}
+                                style={[styles.inputStyle]}
+                                containerStyle={styles.inputContainerStyle}
+                                floatingTopValue={hp('1%')}
+                                floatingFontSize={hp('0.5%')}
                             />
                             <InputText
                                 name="password"
                                 label="Password"
                                 secureTextEntry
+                                passwordHideIcon={< Ionicons
+                                    name="eye-off-outline"
+                                    color={constants.white}
+                                    size={20}
+                                />}
+                                passwordShowIcon={< Ionicons
+                                    name="eye-outline"
+                                    color={constants.white}
+                                    size={20}
+                                />}
                                 validateNames={['isValidPassword', 'required']}
                                 errorMessages={['Minimum eight characters, at least one uppercase letter, one lowercase letter and one number', 'This field is required']}
                                 type="text"
@@ -240,11 +270,11 @@ class App extends React.Component {
                                 placeholder="custom password validation"
                                 leftIcon={<FontAwesome name="lock" color="#0A3055" size={20} />}
                                 onChange={this.handlePassword}
-                                invalidIcon={< Feather
-                                    name="alert-circle"
-                                    color="red"
-                                    size={20}
-                                />}
+                                labelStyle={styles.labelStyle}
+                                style={[styles.inputStyle]}
+                                containerStyle={styles.inputContainerStyle}
+                                floatingTopValue={hp('1%')}
+                                floatingFontSize={hp('0.5%')}
                             />
                             <InputText
                                 name="repeatPassword"
@@ -262,6 +292,11 @@ class App extends React.Component {
                                     size={20}
                                 />}
                                 leftIcon={<FontAwesome name="lock" color="#0A3055" size={20} />}
+                                labelStyle={styles.labelStyle}
+                                style={[styles.inputStyle]}
+                                containerStyle={styles.inputContainerStyle}
+                                floatingTopValue={hp('1%')}
+                                floatingFontSize={hp('0.5%')}
                             />
                             <TouchableOpacity
                                 activeOpacity={0.8}
@@ -305,6 +340,37 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         alignSelf: "center",
         textTransform: "uppercase"
+    }
+    labelStyle: {
+        fontSize: hp('1.8%'),
+        color: constants.white,
+        paddingTop: hp('0.8%'),
+        opacity: .9,
+        // top: 20
+    },
+    inputStyle: {
+        color: constants.white,
+        paddingTop: hp('1%'),
+    },
+    inputContainerStyle: {
+        paddingBottom: hp('1%'),
+        paddingTop: hp('1.3%'),
+        borderWidth: 2,
+        borderBottomWidth: 2,
+        // borderColor: "#333333",
+        // borderBottomColor: "#333333",
+        borderColor: constants.primaryColor,
+        borderBottomColor: constants.primaryColor,
+        borderRadius: 15
+    },
+    inputIconStyle: {
+        marginHorizontal: 10,
+        fontSize: hp('2.3%'),
+        backgroundColor: "#333333",
+        borderRadius: 5,
+        alignSelf: "center",
+        paddingHorizontal: hp('0.2%'),
+        paddingVertical: hp('0.1%'),
     }
 });
 ````
