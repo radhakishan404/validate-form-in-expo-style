@@ -27,7 +27,7 @@
   },
   "private": false,
   "name": "validate-form-in-expo-style",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "peerDependencies": {
     "react": ">=16.9.55",
     "react-native": ">=0.63.30"
