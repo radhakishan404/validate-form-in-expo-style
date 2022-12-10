@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "react-native-reanimated": "~1.13.0",
+    "expo": "^47.0.8",
+    "@expo/vector-icons": "^13.0.0",
+    "react-native-gesture-handler": "^2.8.0",
     "react-native-web": "~0.13.12",
     "react-lifecycles-compat": "^3.0.4"
   },
