@@ -2,7 +2,7 @@
 ===================
 [![N|Solid](https://camo.githubusercontent.com/2ff6a06f2f6e08b17783133ca7ebc23ce1f8ac4415eee8e835647b57048a8f0d/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6d6173686170652f6170697374617475732e737667)](https://opensource.org/licenses/MIT)
 
-😉 Hey! I'm Radhakishan Jangid 😎. More about me [Here ↩](https://radhakishan.vpran.in/).
+😉 Hey! I'm Radhakishan Jangid 😎. More about me [Here ↩](https://radhakishan404.github.io/).
 
 ℹ️ [**validate-form-in-expo-style**](https://github.com/radhakishan404/validate-form-in-expo-style) is a Simple form validation component with floating label for React-Native inspired by [react-native-form-validator](https://github.com/NewOldMax/react-native-validator-form). You can add floating label with this library and can validate form. I created this package for my personal use you can use it in yours too.
 
